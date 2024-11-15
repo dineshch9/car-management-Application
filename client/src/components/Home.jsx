@@ -1,7 +1,7 @@
 import React, { useContext, useEffect } from 'react'
 import Input from './Input'
 import { UserButton } from '@clerk/clerk-react'
-import Card from './card'
+import Card from './Card'
 import Button from './Button'
 
 
