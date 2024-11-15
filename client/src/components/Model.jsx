@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import { createPortal } from "react-dom";
 import space from './store/context';
-import Card from './card';
+
 import Form from './Form';
 
 const Model = () => {
