@@ -8,6 +8,8 @@ const app = express();
 
 app.get('/',(req,res)=>res.send("express on versel"));
 
+app.get('/sd',(req,res)=>res.send("express on versel done"));
+
 
 
 
