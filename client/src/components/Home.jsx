@@ -15,8 +15,11 @@ import Model from './Model'
 
 const Home = () => {
 
+  
 
-  const {display}=useContext(space);
+
+  const {display,cars}=useContext(space);
+
 
   
 
@@ -26,7 +29,7 @@ const Home = () => {
 
   return (
     <>
-    <div className='flex  justify-between  bg-slate-400  '>
+    <div className='flex   justify-between  bg-slate-400  '>
       <Input />
 
       <div className='flex gap-2'>
@@ -40,18 +43,12 @@ const Home = () => {
     </div>
 
     <div className='flex justify-around flex-wrap w-screen h-screen  gap-10'>
-      <Card/>
-      <Card/>
-      <Card/>
-      <Card/>
-      <Card/>
-      <Card/>
-      <Card/>
-      <Card/>
-      <Card/>
-      <Card/>
-      <Card/>
-      </div>
+
+   { cars.map((car,i) => (<Card key={i} title={car.title} des={car.des} tag={car.tag} img={car.img}/>))}
+
+
+   
+    </div>
   
    
     </>
