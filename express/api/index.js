@@ -1,4 +1,5 @@
 import express from 'express';
+
 import { clerkMiddleware } from '@clerk/express';
 import cors from 'cors';
 import mongoose from 'mongoose';
@@ -7,6 +8,20 @@ import users1 from './models/users.js';
 import dotenv from 'dotenv';
 dotenv.config(); // Ensure to have .js extension in ES module imports
 const app = express();
+
+
+const corsOptions = {
+  origin: 'https://car-management-application-vert.vercel.app', 
+  methods: ['GET', 'POST', 'DELETE'],  
+  allowedHeaders: ['Content-Type', 'Authorization'] 
+};
+
+app.use(cors(corsOptions));
+
+
+
+
+
 
 app.use(clerkMiddleware())
 app.use(cors())
