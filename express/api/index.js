@@ -6,7 +6,7 @@ import mongoose from 'mongoose';
 import bodyParser from 'body-parser';
 import users1 from './models/users.js'; 
 import dotenv from 'dotenv';
-dotenv.config(); // Ensure to have .js extension in ES module imports
+dotenv.config(); 
 const app = express();
 
 

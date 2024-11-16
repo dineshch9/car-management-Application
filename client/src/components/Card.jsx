@@ -14,7 +14,7 @@ const Card = ({title,des,tag,img}) => {
         <div className="size">
           <span>{des}</span>
           <ul className="list-size">
-            <li className="item-list"><button className="item-list-button">tag</button></li>
+            <li className="item-list"><button className="item-list-button">{tag}</button></li>
             
           </ul>
         </div>

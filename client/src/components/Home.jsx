@@ -29,14 +29,14 @@ const Home = () => {
 
   return (
     <>
-    <div className='flex   justify-between  bg-slate-400  '>
+    <div className='flex sticky top-0  justify-between h-30 z-40  bg-slate-400  '>
       <Input />
 
       <div className='flex gap-2'>
       <Button/>
 
      <Model/>
-      <UserButton />
+      <UserButton  />
       </div>
    
     
