@@ -105,7 +105,8 @@ res.status(200).send("Success");
 
 
 app.get('/get_cars', async (req, res) => {
-
+  console.log("hiijust"+url1+"mmm");
+  console.log("bye");
   const userId = req.auth.userId
 
   if (!userId) {
