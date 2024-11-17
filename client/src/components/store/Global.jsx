@@ -4,9 +4,12 @@ import space from './context'
 import axios from 'axios';
 
 import { useAuth, useUser } from '@clerk/clerk-react'
+import dotenv from 'dotenv';
+dotenv.config();
+
 
 // const url="http://localhost:8085"
-const url="https://car-management-application-server.vercel.app"
+const url=process.env.BASE_URL;
 
 
 

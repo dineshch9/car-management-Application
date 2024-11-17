@@ -28,7 +28,7 @@ app.use(cors())
 app.use(bodyParser.json({ limit: '50mb' }));  // Set limit to 50mb (adjust as needed)
 app.use(bodyParser.urlencoded({ limit: '50mb', extended: true }));
 app.use(express.json())
-const url = "mongodb+srv://dinesh:dinesh@dinesh.2k4lr.mongodb.net/cars1?retryWrites=true&w=majority&appName=Dinesh";
+const url = process.env.DB_URL;
 
 async function connect(url){
   try {
