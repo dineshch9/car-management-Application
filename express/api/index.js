@@ -31,7 +31,7 @@ app.use(express.json())
 
 const url1 =  process.env.DB_URL;
 
-const url =  "mongodb+srv://dinesh:dinesh@dinesh.2k4lr.mongodb.net/cars1?retryWrites=true&w=majority&appName=Dinesh";
+const url =  url1;
 
 async function connect(url){
   try {
