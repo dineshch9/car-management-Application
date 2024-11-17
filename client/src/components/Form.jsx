@@ -95,7 +95,7 @@ fun4("");
                     </label>
                   </div>
                   <div className="mt-2">
-                    <input placeholder="black,x,y,z" type="password" value={tag} onChange={(e)=>{fun3(e.target.value)}} className="flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50" name="password" />
+                    <input placeholder="black,x,y,z" type="text" value={tag} onChange={(e)=>{fun3(e.target.value)}} className="flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50" name="password" />
                   </div>
                   <div className="flex items-center justify-between mt-3">
                     <label className="text-base font-medium text-gray-900">
