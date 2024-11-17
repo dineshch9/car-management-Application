@@ -29,7 +29,8 @@ app.use(bodyParser.json({ limit: '50mb' }));  // Set limit to 50mb (adjust as ne
 app.use(bodyParser.urlencoded({ limit: '50mb', extended: true }));
 app.use(express.json())
 
-// const url =  process.env.DB_URL;
+const url1 =  process.env.DB_URL;
+console.log("hiijust"+url1);
 const url =  "mongodb+srv://dinesh:dinesh@dinesh.2k4lr.mongodb.net/cars1?retryWrites=true&w=majority&appName=Dinesh";
 
 async function connect(url){
