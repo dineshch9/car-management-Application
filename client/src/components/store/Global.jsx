@@ -7,9 +7,11 @@ import { useAuth, useUser } from '@clerk/clerk-react'
 
 // const url="http://localhost:8085"
 
-const url = import.meta.env.BASE_URL
+// const url = import.meta.env.BASE_URL
+const url ="https://car-management-application-server.vercel.app";
 
-
+console.log(url);
+console.log("zzzzzzzzzzzz");
 
 
 

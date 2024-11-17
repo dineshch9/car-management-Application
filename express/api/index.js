@@ -55,7 +55,7 @@ const addCarToUser = async (id,name,email, newCar,res) => {
     let userf = await users1.findOne({ id: id });
 
     if (userf) {
-      console.log("xxxxxxxxxxx"+id);
+     
       // User exists, add the new car to their cars array
       userf.cars.push(newCar);
       await userf.save();
