@@ -6,7 +6,10 @@ import axios from 'axios';
 import { useAuth, useUser } from '@clerk/clerk-react'
 
 // const url="http://localhost:8085"
-const url="https://car-management-application-server.vercel.app"
+
+const url = import.meta.env.BASE_URL
+
+
 
 
 
