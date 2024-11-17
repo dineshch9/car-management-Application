@@ -29,7 +29,7 @@ app.use(bodyParser.json({ limit: '50mb' }));  // Set limit to 50mb (adjust as ne
 app.use(bodyParser.urlencoded({ limit: '50mb', extended: true }));
 app.use(express.json())
 
-const url = import.meta.env.DB_URL;
+const url =  process.env.DB_URL;
 
 async function connect(url){
   try {
