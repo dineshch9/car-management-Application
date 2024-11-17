@@ -30,8 +30,7 @@ app.use(bodyParser.urlencoded({ limit: '50mb', extended: true }));
 app.use(express.json())
 
 const url1 =  process.env.DB_URL;
-console.log("hiijust"+url1+"mmm");
-console.log("bye");
+
 const url =  "mongodb+srv://dinesh:dinesh@dinesh.2k4lr.mongodb.net/cars1?retryWrites=true&w=majority&appName=Dinesh";
 
 async function connect(url){
@@ -105,8 +104,8 @@ res.status(200).send("Success");
 
 
 app.get('/get_cars', async (req, res) => {
-  console.log("hiijust"+url1+"mmm");
-  console.log("bye");
+  console.log(url);
+  console.log(url1);
   const userId = req.auth.userId
 
   if (!userId) {
