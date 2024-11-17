@@ -29,9 +29,9 @@ app.use(bodyParser.json({ limit: '50mb' }));  // Set limit to 50mb (adjust as ne
 app.use(bodyParser.urlencoded({ limit: '50mb', extended: true }));
 app.use(express.json())
 
-const url1 =  process.env.DB_URL;
+const url =  process.env.DB_URL;
 
-const url =  url1;
+
 
 async function connect(url){
   try {
@@ -83,7 +83,7 @@ const addCarToUser = async (id,name,email, newCar,res) => {
 
 app.post('/add_car', async (req, res) => {
   const userId = req.auth.userId
-console.log("hiiii"+userId);
+
   if (!userId) {
     return void res.status(400).json({ error: 'Error: No signed-in user' })
   }
@@ -104,8 +104,7 @@ res.status(200).send("Success");
 
 
 app.get('/get_cars', async (req, res) => {
-  console.log(url);
-  console.log(url1);
+
   const userId = req.auth.userId
 
   if (!userId) {

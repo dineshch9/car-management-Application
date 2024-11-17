@@ -125,6 +125,7 @@ const handleSubmit = async (a, b, c, d) => {
 
       // Update cars state
       carsf(arr);
+      dispfun(false);
     } else {
       console.error('Failed to add car. Status:', res.status);
     }
